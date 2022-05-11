@@ -41,7 +41,8 @@ X's POV
 
 * Data ``D`` to be encrypted is converted into a cipher point, ``Cm`` on the curve ``C`` as follows:
 
-.. code-block::
+.. code::
+
 	Cm = {x_privkey * G, D + (x_privkey * y_pubkey)} ~~~> in the form (u, v)
 	
 Transmit this information publicly.
@@ -52,7 +53,8 @@ Y's POV
 
 * Data ``Cm`` is recieved in the form (u, v), decrypted to obtain data D' as follows:
 
-.. code-block::
+.. code::
+
 	D' = v - y_privkey * (u)
 	
 D' is (should be) the same as D.
